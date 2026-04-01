@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex gap-4 mt-6">
               <a href="#" className="text-charcoal-400 hover:text-gold-400 transition-colors"><Camera className="w-5 h-5" /></a>
               <a href="#" className="text-charcoal-400 hover:text-gold-400 transition-colors"><Globe className="w-5 h-5" /></a>
-              <a href="#" className="text-charcoal-400 hover:text-gold-400 transition-colors"><Youtube className="w-5 h-5" /></a>
+              <a href="#" className="text-charcoal-400 hover:text-gold-400 transition-colors"><Video className="w-5 h-5" /></a>
             </div>
           </div>
 
