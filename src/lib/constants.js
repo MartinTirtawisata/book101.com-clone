@@ -1,9 +1,9 @@
 export const BRANDS = [
-  { name: 'THE HAVEN', tagline: 'Upscale Leisure', color: 'bg-haven', textColor: 'text-white' },
-  { name: 'THE 1O1', tagline: 'Upscale Premium', color: 'bg-the101', textColor: 'text-white' },
-  { name: '1O1 STYLE', tagline: 'Midscale Premium', color: 'bg-style101', textColor: 'text-white' },
-  { name: '1O1 URBAN', tagline: 'Midscale Select', color: 'bg-urban101', textColor: 'text-white' },
-  { name: 'FRii', tagline: 'Midscale Boutique', color: 'bg-frii', textColor: 'text-white' },
+  { name: 'THE HAVEN', tagline: 'Upscale Leisure' },
+  { name: 'THE 1O1', tagline: 'Upscale Premium' },
+  { name: '1O1 STYLE', tagline: 'Midscale Premium' },
+  { name: '1O1 URBAN', tagline: 'Midscale Select' },
+  { name: 'FRii', tagline: 'Midscale Boutique' },
 ]
 
 export const CITIES = [
@@ -21,17 +21,13 @@ export function formatIDR(amount) {
   }).format(amount)
 }
 
-export function getBrandColor(brand) {
-  const map = {
-    'THE HAVEN': 'bg-haven',
-    'THE 1O1': 'bg-the101',
-    '1O1 STYLE': 'bg-style101',
-    '1O1 URBAN': 'bg-urban101',
-    'FRii': 'bg-frii',
+export function getBrandBadgeStyle(brand) {
+  const styles = {
+    'THE HAVEN': { bg: 'bg-badge-haven-bg', text: 'text-badge-haven-text' },
+    'THE 1O1': { bg: 'bg-badge-101-bg', text: 'text-badge-101-text' },
+    '1O1 STYLE': { bg: 'bg-badge-style-bg', text: 'text-badge-style-text' },
+    '1O1 URBAN': { bg: 'bg-badge-urban-bg', text: 'text-badge-urban-text' },
+    'FRii': { bg: 'bg-badge-frii-bg', text: 'text-badge-frii-text' },
   }
-  return map[brand] || 'bg-charcoal-700'
-}
-
-export function getBrandTextColor(brand) {
-  return 'text-white'
+  return styles[brand] || { bg: 'bg-grey-700', text: 'text-white' }
 }

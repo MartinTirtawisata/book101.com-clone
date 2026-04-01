@@ -1,48 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold-50: #fdf8f0;
-  --color-gold-100: #f9edda;
-  --color-gold-200: #f2d7b0;
-  --color-gold-300: #e9bc7e;
-  --color-gold-400: #dfa04e;
-  --color-gold-500: #d4882f;
-  --color-gold-600: #c06d22;
-  --color-gold-700: #a0531f;
-  --color-gold-800: #824320;
-  --color-gold-900: #6a381d;
+  /* Primary palette */
+  --color-navy: #1a2340;
+  --color-navy-light: #243050;
+  --color-cta: #c9975a;
+  --color-cta-hover: #b5854a;
+  --color-star: #f5a623;
+  --color-success: #3d7a5c;
+  --color-page-bg: #f8f8f8;
+  --color-card-bg: #ffffff;
+  --color-card-border: #e5e5e5;
 
-  --color-charcoal-50: #f6f6f7;
-  --color-charcoal-100: #e2e3e5;
-  --color-charcoal-200: #c4c6ca;
-  --color-charcoal-300: #9fa2a9;
-  --color-charcoal-400: #7b7f87;
-  --color-charcoal-500: #61646d;
-  --color-charcoal-600: #4d4f57;
-  --color-charcoal-700: #3f4147;
-  --color-charcoal-800: #2d2e33;
-  --color-charcoal-900: #1a1b1e;
+  /* Text */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-text-body: #444444;
 
-  --color-haven: #1a3c34;
-  --color-the101: #1e3a5f;
-  --color-style101: #6b3fa0;
-  --color-urban101: #e85d2a;
-  --color-frii: #00b4d8;
+  /* Brand badges */
+  --color-badge-haven-bg: #8B6914;
+  --color-badge-haven-text: #FFF8E7;
+  --color-badge-101-bg: #1a2340;
+  --color-badge-101-text: #ffffff;
+  --color-badge-style-bg: #5c3d2e;
+  --color-badge-style-text: #ffffff;
+  --color-badge-urban-bg: #2d4a6b;
+  --color-badge-urban-text: #ffffff;
+  --color-badge-frii-bg: #2d6b4a;
+  --color-badge-frii-text: #ffffff;
+
+  /* Greys */
+  --color-grey-50: #f8f8f8;
+  --color-grey-100: #f0f0f0;
+  --color-grey-200: #e5e5e5;
+  --color-grey-300: #cccccc;
+  --color-grey-400: #999999;
+  --color-grey-500: #666666;
+  --color-grey-600: #444444;
+  --color-grey-700: #333333;
+  --color-grey-800: #1a1a1a;
 
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: theme(colors.charcoal.800);
-  background: #fff;
+  color: var(--color-text-body);
+  background: var(--color-page-bg);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -51,11 +62,10 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: theme(colors.charcoal.300);
+  background: var(--color-grey-300);
   border-radius: 3px;
 }
 
-/* Price formatting */
 .price-format {
   font-variant-numeric: tabular-nums;
 }

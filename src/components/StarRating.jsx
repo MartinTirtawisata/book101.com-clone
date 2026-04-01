@@ -6,7 +6,7 @@ export default function StarRating({ rating }) {
       {Array.from({ length: 5 }, (_, i) => (
         <Star
           key={i}
-          className={`w-4 h-4 ${i < rating ? 'fill-gold-400 text-gold-400' : 'text-charcoal-200'}`}
+          className={`w-3.5 h-3.5 ${i < rating ? 'fill-star text-star' : 'text-grey-300'}`}
         />
       ))}
     </div>
